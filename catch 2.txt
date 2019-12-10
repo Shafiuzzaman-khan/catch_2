@@ -1,0 +1,51 @@
+package Ulab;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Excep {
+	public static void main(String[] args) {
+		
+		try {
+			f1();
+		}
+		catch(Y f) {
+			
+		}
+		
+	}
+	
+	public static void f2() throws NullPointerException,ArithmeticException,IOException,FileNotFoundException{
+		
+		
+	}
+	
+	public static void f1() throws Y{
+		try {
+			f2();
+		}
+		catch (NullPointerException e) {
+			System.out.println("Null pointer exception");
+
+		}
+		catch (ArithmeticException e) {
+			System.out.println("Arithmetic exception");
+
+		}
+		
+		catch (IOException e) {
+			System.out.println("IO exception");
+
+		}
+		catch (FileNotFoundException e) {
+			System.out.println("Null pointer exception");
+
+		}
+		
+	}
+
+}
+
+class Y extends Excep{
+	
+}
